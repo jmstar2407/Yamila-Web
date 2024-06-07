@@ -957,7 +957,8 @@ about
 }
 
 #about .service-item {
-  margin-top: 30px;
+    margin-top: 30px;
+    padding-left: 10%;
 }
 
 #about .service-item img {
@@ -1677,6 +1678,10 @@ portfolio
   letter-spacing: 0.25px;
   line-height: 46px;
   text-align: center;
+}
+
+#about .service-item {
+    padding-left: 0%;
 }
 
 }
