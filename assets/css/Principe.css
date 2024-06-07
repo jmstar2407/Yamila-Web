@@ -1,0 +1,108 @@
+
+
+
+.CuadroP {
+    position: absolute;
+    background: #00000000;
+    top: 134px;
+    height: 80%;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .cuadro2 {
+    position: relative;
+    left: 265px;
+    background: #00000073;
+    top: -402px;
+    height: 930px;
+    width: 992px;
+  }
+
+
+  .CuadroAb {
+    position: relative;
+    background: #32000c;
+    top: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+  .waves {
+    position: absolute;
+    top: 90%;
+    background: rgba(255, 255, 255, 0.3);
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: -12px;
+    margin-top: -12px;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+  }
+  .waves:before {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.377);
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    animation: wave-animate 3s infinite ease-out;
+  }
+  .waves:after {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    opacity: 0;
+    animation: wave-animate 3s 1.5s infinite ease-out;
+  }
+  @keyframes wave-animate {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+      transform-origin: center;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+      transform-origin: center;
+    }
+  }
+
+
+  /* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #32000c;
+      }
+
+
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(216 193 155);
+    border-radius: 3px;
+  }
